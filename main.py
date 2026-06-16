@@ -13,7 +13,7 @@ def main() -> None:
             defaults={"description": info["race"]["description"]}
         )
 
-        guild_data= info.get("guild")
+        guild_data = info.get("guild")
         if guild_data:
             guild, _ = Guild.objects.get_or_create(
                 name=info["guild"]["name"],
